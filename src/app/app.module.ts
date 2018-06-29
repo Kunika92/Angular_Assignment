@@ -1,25 +1,25 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { HeroesComponent } from './heroes/heroes.component';
+import { RestaurantsComponent } from './restaurants/restaurants.component';
 import { FormsModule } from '@angular/forms';
-import { HeroDetailComponent } from './hero-detail/hero-detail.component';
+import { RestaurantDetailComponent } from './restaurant-detail/restaurant-detail.component';
 import { MessagesComponent } from './messages/messages.component';
 import { AppRoutingModule } from './/app-routing.module';
 import { DashboardComponent } from './dashboard/dashboard.component'; // <-- NgModel lives here
 import { HttpClientModule } from '@angular/common/http';
 import { HttpClientInMemoryWebApiModule } from 'angular-in-memory-web-api';
 import { InMemoryDataService }  from './in-memory-data.service';
-import { HeroFormComponent } from './hero-form/hero-form.component';
+import { RestaurantFormComponent } from './restaurant-form/restaurant-form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeroesComponent,
-    HeroDetailComponent,
+    RestaurantsComponent,
+    RestaurantDetailComponent,
     MessagesComponent,
     DashboardComponent,
-    HeroFormComponent
+    RestaurantFormComponent
   ],
   imports: [
     BrowserModule,

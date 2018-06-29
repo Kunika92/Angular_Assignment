@@ -1,0 +1,8 @@
+<h2>List of Top Restaurants</h2>
+<ul class="restaurants">
+  <li *ngFor="let restaurant of restaurants">
+    <a routerLink="/detail/{{restaurant.id}}">
+      <span class="badge">{{restaurant.id}}</span> {{restaurant.name}}
+    </a>
+  </li>
+</ul>

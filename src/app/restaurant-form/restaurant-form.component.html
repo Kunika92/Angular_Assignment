@@ -14,7 +14,7 @@
       </div>
 
   <h1>Contact Form</h1>
-  <form (ngSubmit)="onSubmit()" #heroForm="ngForm">
+  <form (ngSubmit)="onSubmit()" #restaurantForm="ngForm">
     <div class="form-group">
       <label for="username">Name</label>
       <input type="text" class="form-control" id="username"
@@ -33,11 +33,11 @@
          [(ngModel)]="model.email" name="email" #name="ngModel">
          <div [hidden]="name.valid || name.pristine"
               class="alert alert-danger">
-            Name is required
+            Email is required
           </div>
       </div>
 
-    <button type="button" class="btn btn-default" (click)="newHero()">Clear</button>
-    <button type="submit" class="btn btn-success" [disabled]="!heroForm.form.valid">Submit</button>
+    <button type="button" class="btn btn-default" (click)="newRestaurant()">Clear</button>
+    <button type="submit" class="btn btn-success" [disabled]="!restaurantForm.form.valid">Submit</button>
   </form>
 </div>

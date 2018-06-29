@@ -3,13 +3,14 @@ import { Restaurant } from '../restaurant';
 import { RestaurantService } from '../restaurant.service';
 
 @Component({
-  selector: 'app-dashboard',
-  templateUrl: './dashboard.component.html',
-  styleUrls: [ './dashboard.component.css' ]
+  selector: 'app-restaurants',
+  templateUrl: './restaurants.component.html',
+  styleUrls: ['./restaurants.component.css']
 })
 
-export class DashboardComponent implements OnInit {
-  restaurants: Restaurant[] = [];
+export class RestaurantsComponent implements OnInit {
+
+  restaurants: Restaurant[];
 
   constructor(private restaurantService: RestaurantService) { }
 
@@ -19,6 +20,6 @@ export class DashboardComponent implements OnInit {
 
   getRestaurants(): void {
     this.restaurantService.getRestaurants()
-      .subscribe(restaurants => this.restaurants = restaurants.slice(0, 4));
+        .subscribe(restaurants => this.restaurants = restaurants);
   }
 }

@@ -2,11 +2,11 @@ import { Component, OnInit } from '@angular/core';
 import { ContactForm }    from '../contact-form';
 
 @Component({
-  selector: 'app-hero-form',
-  templateUrl: './hero-form.component.html',
-  styleUrls: ['./hero-form.component.css']
+  selector: 'app-restaurant-form',
+  templateUrl: './restaurant-form.component.html',
+  styleUrls: ['./restaurant-form.component.css']
 })
-export class HeroFormComponent implements OnInit {
+export class RestaurantFormComponent implements OnInit {
   // powers = ['Really Smart', 'Super Flexible',
   //           'Super Hot', 'Weather Changer'];
 
@@ -18,7 +18,7 @@ export class HeroFormComponent implements OnInit {
 
   get diagnostic() { return JSON.stringify(this.model); }
 
-  newHero() {
+  newRestaurant() {
     this.model = new ContactForm(42, '', '');
   }
 
